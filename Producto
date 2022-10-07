@@ -1,0 +1,23 @@
+class Producto:
+    def __init__(self, codigo, nombre, precio , tipo.):
+        self.codigo = codigo
+        self.nombre = nombre
+        self.precio = precio
+        self.tipo = tipo
+        try:
+            if precio != float :
+                raise Exception("el precio tiene que ser un numero")
+        except Exception as error:
+            print(error)
+            self.precio = precio
+
+    
+    def __str__(self):
+        return(self.codigo,self.nombre,self.precio,self.tipo) 
+
+    print(__str__)    
+          
+
+    def setprecio(self):
+        nuevoprecio = input(float("introduce un nuevo precio"))
+        self.precio = nuevoprecio
